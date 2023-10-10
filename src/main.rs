@@ -15,6 +15,8 @@ use std::time::Duration;
 
 #[tokio::main]
 async fn main() -> Result<(), sqlx::Error> {
+
+    //Replace with your database URL
     let db_url = "postgresql://postgres:Zignuts@123@localhost/todo-rust";
 
     let pool = PgPoolOptions::new()
